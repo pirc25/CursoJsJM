@@ -712,17 +712,46 @@
 
 
     //Clase 28 objete math
-    console.log(Math);
-    console.log(Math.PI)
-    console.log(Math.abs(-7.8));
-    console.log(Math.ceil(-7.82));
-    console.log(Math.floor(-7.42));
-    console.log(Math.round(-7.42));
-    console.log(Math.abs(-7.8));
-    console.log(Math.sqrt(4));
-    console.log(Math.pow(2, 5));
-    console.log(Math.sign(-7.8)); //indicador si s positivo o negativo
-    console.log(Math.random());
+    // console.log(Math);
+    // console.log(Math.PI)
+    // console.log(Math.abs(-7.8)); 
+    // console.log(Math.ceil(-7.82));
+    // console.log(Math.floor(-7.42));
+    // console.log(Math.round(-7.42));
+    // console.log(Math.abs(-7.8));
+    // console.log(Math.sqrt(4));
+    // console.log(Math.pow(2, 5));
+    // console.log(Math.sign(-7.8)); //indicador si s positivo o negativo
+    // console.log(Math.random());
+
+    //Clase 29 CortoCircuito
+
+    function saludar(nombre) {
+      nombre = nombre || "Desconocido";
+      console.log(`Hola ${nombre}`);
+    }
+
+    saludar();
+
+    console.log("" || "Lo de la derecha");
+    console.log({} || "Lo de la derecha");
+    console.log([] || "Lo de la derecha");
+    console.log(1 || "Lo de la derecha");
+    console.log(0 || "Lo de la derecha");
+    console.log("Pepe" || "Lo de la derecha");
+    console.log(true || "Lo de la derecha");
+    console.log(false || "Lo de la derecha");
+
+
+    console.log("" && "Lo de la derecha");
+    console.log({} && "Lo de la derecha");
+    console.log([] && "Lo de la derecha");
+    console.log(1 && "Lo de la derecha");
+    console.log(0 && "Lo de la derecha");
+    console.log("Pepe" && "Lo de la derecha");
+    console.log(true && "Lo de la derecha");
+    console.log(false && "Lo de la derecha");
+
   </script>
 
 
