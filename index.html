@@ -762,16 +762,67 @@
 
     //Clase 31  Expresiones regulares
 
-    let cadena = "Insiders han apuntado que el hype que se tiene para la producción es tan grande que ha superado a Avengers Endgame. También se ha filtrado que existen batallas mejores que lo ocurrido contra Thanos.";
+    // let cadena = "Insiders han apuntado que el hype que se tiene para la producción es tan grande que ha superado a Avengers Endgame. También se ha filtrado que existen batallas mejores que lo ocurrido contra Thanos.";
 
-    let expReg = new RegExp("ha", "g");
-    let expReg2 = /ha/g;
+    // let expReg = new RegExp("ha", "g");
+    // let expReg2 = /ha/g;
 
-    console.log(expReg.test(cadena)); //True o false si la palabra esta en la cadena
-    console.log(expReg.exec(cadena));
+    // console.log(expReg.test(cadena)); //True o false si la palabra esta en la cadena
+    // console.log(expReg.exec(cadena));
 
-    console.log(expReg2.test(cadena)); //True o false si la palabra esta en la cadena
-    console.log(expReg2.exec(cadena));
+    // console.log(expReg2.test(cadena)); //True o false si la palabra esta en la cadena
+    // console.log(expReg2.exec(cadena));
+
+
+
+
+
+
+
+
+
+
+    // Clase 32 Funciones Anonimas Autoejecutables.
+
+
+    (function () {
+      console.log("Mi primer IIFE");
+
+    })();
+    (function (d, w, c) {
+      console.log("Mi primer IIFE");
+      console.log(d);
+      console.log(w);
+      console.log(c);
+    })(document, window, console);
+
+    // version Clasica
+    (function () {
+      console.log("Version Clasica");
+    }());
+
+
+    // version crockford
+    ((function () {
+      console.log("Version Clasica");
+    }()));
+
+
+    // version crockford
+    ((function () {
+      console.log("Version Clasica");
+    }()));
+
+    // version Unaria
+    +function () {
+      console.log("Version Clasica");
+    }();
+
+    // version Unaria
+    !function () {
+      console.log("Version Clasica");
+    }();
+
   </script>
 
 
