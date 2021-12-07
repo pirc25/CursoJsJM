@@ -152,8 +152,14 @@
 
 
     //       7) Programa una función que valide si una palabra o frase dada, es un palíndromo(que se lee igual en un sentido que en otro), pe.mifuncion("Salas") devolverá true.
-    const esUnPalindromo = (invertirCadena, cadena) => {
-      (cadena === invertirCadena(cadena))
+    const esUnPalindromo = (cadena) => {
+      if (!cadena) return console.warn("No ha ingresado texto");
+      let cadenaInvertida;
+      for (let i = 0; i <= cadena.length; i++)
+        (!cadenaInvertida)
+          ? cadenaInvertida = cadena[cadena.length - i]
+          : cadenaInvertida = cadenaInvertida + cadena[cadena.length - i];
+      (cadenaInvertida.toUpperCase() === cadena.toUpperCase())
         ? console.log(true)
         : console.log(false);
     }
